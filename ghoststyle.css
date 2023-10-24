@@ -48,9 +48,11 @@ body {
 }
 #spooky #body:before {
     left:-18px;
+    transition:1s;
 }
 #spooky #body:after {
     right:-18px;
+    transition:1s;
 }
 #spooky #body #eyes {
     display:flex;
@@ -68,6 +70,13 @@ body {
     height:30px;
     background:#252c49;
     border-radius:50%;
+    transition:1s;
+}
+#spooky #body #eyes:hover:before,
+#spooky #body #eyes:hover:after,
+#spooky #body #mouth:hover {
+    transition:1s;
+    background:red;
 }
 #spooky #body #mouth {
     background:#252c49;
@@ -77,6 +86,7 @@ body {
     border-bottom-left-radius:30px;
     border-bottom-right-radius:30px;
     display:flex;
+    transition:1s;
 }
 #spooky #body #mouth:before,
 #spooky #body #mouth:after {
