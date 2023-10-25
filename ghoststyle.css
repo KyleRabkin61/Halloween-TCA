@@ -74,15 +74,7 @@ body {
     border-radius:50%;
     transition:1s;
 }
-.spooky .body:hover,
-.spooky .body:hover:before,
-.spooky .body:hover:after,
-.spooky .body:hover .feet:before,
-.spooky .body:hover .feet:after,
-.spooky .body:hover .feet >* {
-    transition:1s;
-    background:red;
-}
+
 .spooky .body .mouth {
     background:#252c49;
     margin:25px auto 0;
@@ -101,6 +93,7 @@ body {
     margin-left:10px;
     width:10px;
     height:10px;
+    transition:1s;
 }
 .spooky .body .feet {
     position:absolute;
@@ -120,6 +113,30 @@ body {
     border-radius:50%;
     transition:1s;
 }
+.spooky:hover {
+    animation:floaty 0.5s infinite;
+}
+.spooky .body:hover:before,
+.spooky .body:hover:after {
+    animation:floaty 0.1s infinite;
+}
+.spooky .body:hover,
+.spooky .body:hover:before,
+.spooky .body:hover:after,
+.spooky .body:hover .feet:before,
+.spooky .body:hover .feet:after,
+.spooky .body:hover .feet >*,
+.spooky .body:hover .mouth:before,
+.spooky .body:hover .mouth:after {
+    transition:1s;
+    background:#252c49;
+}
+.spooky .body:hover .eyes:before,
+.spooky .body:hover .eyes:after,
+.spooky .body:hover .mouth {
+    transition:1s;
+    background:#f2fbf1;
+}
 .shadow {
     margin:-90px auto 0;
     background:#252c49;
@@ -127,6 +144,9 @@ body {
     height:40px;
     border-radius:50%;
     animation:zoomy 2s infinite;
+}
+.container:hover .shadow {
+    animation:zoomy 0.5s infinite;
 }
 @keyframes floaty {
     0%, 100% {

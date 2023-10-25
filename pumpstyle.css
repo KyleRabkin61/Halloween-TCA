@@ -74,6 +74,12 @@ body {
     border-left:2.4em solid #401b03;
     border-bottom:2.1em solid transparent;
     transform:rotate(30deg);
+    transition:1s;
+}
+.pumpkin:hover .eye.right {
+    border-left:2.4em solid yellow;
+    border-bottom:2.1em solid transparent;
+    transform:rotate(30deg);
 }
 .pumpkin .eye.left {
     left:3.7em;
@@ -82,8 +88,21 @@ body {
     transform:rotate(-30deg);
     transition:1s;
 }
+.pumpkin:hover .eye.left {
+    border-right:2.4em solid yellow;
+    border-bottom:2.1em solid transparent;
+    transform:rotate(-30deg);
+}
 .pumpkin .mouth {
     border-bottom:1em solid #401b03;
+    position:absolute;
+    width:4em;
+    height:2em;
+    bottom:1.5em;
+    transition:1s;
+}
+.pumpkin:hover .mouth {
+    border-bottom:1em solid yellow;
     position:absolute;
     width:4em;
     height:2em;
@@ -104,7 +123,18 @@ body {
     width:0.5em;
     height:1em;
     position:absolute;
-    top:7.7em;
+    top:7.6em;
+    left:7.25em;
+    transition:1s;
+}
+.pumpkin:hover .teeth {
+    border-left:0.8em solid yellow;
+    border-bottom:0 solid transparent;
+    border-top:0.8em solid transparent;
+    width:0.5em;
+    height:1em;
+    position:absolute;
+    top:7.6em;
     left:7.25em;
 }
 .pumpkin .teeth::before,
@@ -122,6 +152,13 @@ body {
     transform:rotate(30deg);
     border-bottom:0.5em solid transparent;
     border-left:1em solid #401b03;
+    transition:1s;
+}
+.pumpkin:hover .teeth:before {
+    top:-0.65em;
+    transform:rotate(30deg);
+    border-bottom:0.5em solid transparent;
+    border-left:1em solid yellow;
 }
 .pumpkin .teeth::after {
     left:1em;
@@ -129,6 +166,13 @@ body {
     transform:rotate(30deg);
     border-bottom:0.5em solid transparent;
     border-left:1em solid #401b03;
+    transition:1s;
+}
+.pumpkin:hover .teeth:after {
+    top:-0.65em;
+    transform:rotate(30deg);
+    border-bottom:0.5em solid transparent;
+    border-left:1em solid yellow;
 }
 .shadow {
     margin:10% auto 0;
