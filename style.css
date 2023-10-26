@@ -6,4 +6,5 @@ body {
     justify-content:center;
     align-items:center;
     margin:0;
+    background:radial-gradient(ellipse at center, #f68632 0%, #f68632 45%, #291111 100%);
 }
