@@ -8,3 +8,19 @@ body {
     margin:0;
     background:radial-gradient(ellipse at center, #f68632 0%, #f68632 45%, #291111 100%);
 }
+.title-header {
+    position:relative;
+    bottom:40px;
+    font-size:40px;
+    font-family: 'Roboto', sans-serif;
+}
+.card-title {
+    font-family: 'Roboto', sans-serif;
+
+}
+p {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    font-family: 'Roboto', sans-serif;
+}
